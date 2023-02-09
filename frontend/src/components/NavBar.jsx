@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import {getClientsByName} from "../redux/actions/clientsAction"
+import s from "./NavBar.module.css"
 
 
 
@@ -30,7 +31,7 @@ function NavBar() {
   }
 
     return (
-        <Navbar bg="light" expand="lg"variant="light">
+        <Navbar className={s.navbar} bg="light" expand="lg"variant="light">
         <Container fluid>
           <Navbar.Brand href="#">Prueba Tecnica</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
