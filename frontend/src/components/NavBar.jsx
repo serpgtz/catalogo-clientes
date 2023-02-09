@@ -31,6 +31,7 @@ function NavBar() {
   }
 
     return (
+      <div className="col-sx-12 col-sm-12">
         <Navbar className={s.navbar} bg="light" expand="lg"variant="light">
         <Container fluid>
           <Navbar.Brand href="#">Prueba Tecnica</Navbar.Brand>
@@ -59,6 +60,7 @@ function NavBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      </div>
     );
 }
 
