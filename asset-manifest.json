@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/serpgtz/catalogo-clientes/static/css/main.3d046a40.css",
-    "main.js": "/serpgtz/catalogo-clientes/static/js/main.e811c658.js",
-    "static/media/v617batch2-bb-01-technology.jpg": "/serpgtz/catalogo-clientes/static/media/v617batch2-bb-01-technology.494fd4e32a966a62b6d7.jpg",
-    "index.html": "/serpgtz/catalogo-clientes/index.html",
-    "main.3d046a40.css.map": "/serpgtz/catalogo-clientes/static/css/main.3d046a40.css.map",
-    "main.e811c658.js.map": "/serpgtz/catalogo-clientes/static/js/main.e811c658.js.map"
+    "main.css": "/catalogo-clientes/static/css/main.f613ca90.css",
+    "main.js": "/catalogo-clientes/static/js/main.e811c658.js",
+    "static/media/v617batch2-bb-01-technology.jpg": "/catalogo-clientes/static/media/v617batch2-bb-01-technology.494fd4e32a966a62b6d7.jpg",
+    "index.html": "/catalogo-clientes/index.html",
+    "main.f613ca90.css.map": "/catalogo-clientes/static/css/main.f613ca90.css.map",
+    "main.e811c658.js.map": "/catalogo-clientes/static/js/main.e811c658.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d046a40.css",
+    "static/css/main.f613ca90.css",
     "static/js/main.e811c658.js"
   ]
 }
