@@ -24,7 +24,7 @@ function Tabla2({id,apellidoM,apellidoP,nombre,calle,telefono,colonia,numero}) {
 
     
   return (
-    <div className="container-fluid">
+    <div>
     <Table  bg="light" variant="light"expand="lg" striped bordered hover>
       <thead>
         <tr>

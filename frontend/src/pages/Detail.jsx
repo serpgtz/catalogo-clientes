@@ -4,9 +4,9 @@ import s from "./Detail.module.css"
 import {getClientsById} from "../redux/actions/clientsAction"
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import Listgroup from "../components/Listgroup";
+
 import Tabla2 from "../components/Tabla2";
-import Opciones from "../components/Opciones/Opciones";
+
 
 
 
@@ -25,7 +25,7 @@ function Detail() {
 
 
     return (
-       <Container  fluid className={s.container}>
+       <>
         <Tabla2
         id={cliente._id}
         nombre={cliente.nombre}
@@ -35,11 +35,12 @@ function Detail() {
         numero={cliente.numero}
         colonia={cliente.colonia}
         telefono={cliente.telefono}
+        className={s.table}
         />
        <Link to="/">
 			<i class="bi bi-arrow-left-circle">Volver</i>
 		</Link>
-       </Container>
+        </>
     );
 }
 
