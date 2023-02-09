@@ -14,7 +14,7 @@ export const UPDATE_ITEM = "UPDATE_ITEM";
 export const getAllClients = () => {
     return async (dispatch) => {
         try {
-            const clients = await axios.get("http://localhost:8000/api/clientes");
+            const clients = await axios.get("/api/clientes");
 
             return dispatch({
                 type: GET_ALL_CLIENTS,
@@ -31,7 +31,7 @@ export function getClientsById(id){
     console.log(id)
     return async function(dispatch){
         try {
-            const client = await axios.get(`http://localhost:8000/api/clientes/${id}`)
+            const client = await axios.get(`/api/clientes/${id}`)
               return dispatch({
                   type: GET_CLIENT_BY_ID,
                   payload: client.data
@@ -46,7 +46,7 @@ export function getClientsById(id){
 export function getClientsByName(name){
     return async function(dispatch){
         try {
-            const cliente = await axios.get(`http://localhost:8000/api/clientes?nombre=${name}`)
+            const cliente = await axios.get(`/api/clientes?nombre=${name}`)
             return dispatch({
                 type: GET_CLIENTE_BY_NAME,
                 payload:cliente.data
@@ -65,7 +65,7 @@ export function deleteItem(id) {
       
       try {
         console.log(typeof id.toString());
-        await axios.delete(`http://localhost:8000/api/clientes/${id}`);
+        await axios.delete(`/api/clientes/${id}`);
         
         return dispatch({
           type: DELETE_ITEM,
@@ -83,7 +83,7 @@ export function deleteItem(id) {
       
       try {
         // console.log("desde action",payload)
-        const response =await axios.put(`http://localhost:8000/api/clientes/${id}`,payload);
+        const response =await axios.put(`/api/clientes/${id}`,payload);
         console.log("action",response)
         
         return dispatch({
@@ -101,7 +101,7 @@ export function deleteItem(id) {
     return async function(dispatch){
         try {
              console.log(payload)
-             const post= await axios.post("http://localhost:8000/api/clientes",payload)
+             const post= await axios.post("/api/clientes",payload)
              return dispatch({
             type:POST_CLIENT,
         })
