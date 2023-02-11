@@ -4,6 +4,7 @@ import s from "./Detail.module.css"
 import {getClientsById} from "../redux/actions/clientsAction"
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import Loading from "../components/Loading"
 
 import Tabla2 from "../components/Tabla2";
 
@@ -26,6 +27,9 @@ function Detail() {
 
     return (
        <>
+       {
+        cliente.length?
+       
         <Tabla2
         id={cliente._id}
         nombre={cliente.nombre}
@@ -37,6 +41,8 @@ function Detail() {
         telefono={cliente.telefono}
         className={s.table}
         />
+        :<Loading/>
+       }
        <Link to="/">
 			<i class="bi bi-arrow-left-circle">Volver</i>
 		</Link>
