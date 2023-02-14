@@ -23,12 +23,13 @@ function Detail() {
         console.log(id)
         
     },[dispatch])
+    
 
 
     return (
        <>
        {
-        cliente.length?
+        cliente.length>0?
        
         <Tabla2
         id={cliente._id}
